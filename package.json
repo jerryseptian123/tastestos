@@ -1,0 +1,12 @@
+{
+  "name": "node-mining-server",
+  "version": "1.0.0",
+  "description": "WebSocket mining server example",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.15.1"
+  }
+}
