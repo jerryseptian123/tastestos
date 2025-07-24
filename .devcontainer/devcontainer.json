@@ -2,5 +2,12 @@
   "name": "Node Mining Server",
   "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
   "forwardPorts": [4000],
-  "postCreateCommand": "node server.js"
+  "portsAttributes": {
+    "4000": {
+      "label": "Mining Server",
+      "onAutoForward": "openBrowser",
+      "visibility": "public"
+    }
+  },
+  "postCreateCommand": "npm install && npm run start"
 }
