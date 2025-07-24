@@ -1,15 +1,6 @@
 {
-  "name": "My Node Server",
-  "image": "mcr.microsoft.com/devcontainers/node:20",
-
+  "name": "Node Mining Server",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
   "forwardPorts": [4000],
-
-  "postCreateCommand": "node server.js",
-
-  "customizations": {
-    "vscode": {
-      "settings": {},
-      "extensions": ["dbaeumer.vscode-eslint"]
-    }
-  }
+  "postCreateCommand": "node server.js"
 }
