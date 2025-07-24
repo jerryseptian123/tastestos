@@ -1,0 +1,15 @@
+{
+  "name": "My Node Server",
+  "image": "mcr.microsoft.com/devcontainers/node:20",
+
+  "forwardPorts": [4000],
+
+  "postCreateCommand": "node server.js",
+
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": ["dbaeumer.vscode-eslint"]
+    }
+  }
+}
